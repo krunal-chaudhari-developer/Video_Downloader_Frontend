@@ -1,12 +1,19 @@
 import React from "react";
-import Navbar from "./components/Layout/Navbar/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Homepage from "./components/Homepage/Homepage";
+import Facebook from "./components/Facebook/Facebook/Facebook";
+import Instagram from "./components/Instagram/Instagram/Instagram";
 
 const App = () => {
   return (
     <>
-      <div className="">
-        <Navbar />
-      </div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/facebook" element={<Facebook />} />
+          <Route exact path="/instagram" element={<Instagram />} />
+        </Routes>
+      </Router>
     </>
   );
 };
