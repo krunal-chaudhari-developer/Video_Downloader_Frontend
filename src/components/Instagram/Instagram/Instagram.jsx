@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import Layout from "../../Layout/Layout";
 import "../../../Spinner.css";
+import Features from "../../Features/Features";
 
 const Instagram = () => {
   const [data, setData] = useState([]);
@@ -12,8 +13,8 @@ const Instagram = () => {
   });
 
   const handlePaste = () => {
-    navigator.clipboard.readText().then((clipboardText) => {
-      setAction({ downloadLink: clipboardText });
+    navigator.clipboard.readText().then((text) => {
+      setAction({ downloadLink: text });
     });
   };
 
@@ -56,33 +57,35 @@ const Instagram = () => {
             </h1>
           </div>
 
-          <div className="flex justify-between bg-white rounded-lg my-10 mx-2 lg:mx-20 ">
-            <div className="p-2">
-              <input
-                value={action.downloadLink}
-                placeholder="Paste Instagram URL"
-                onChange={(e) =>
-                  setAction({ downloadLink: e.target.value, open: false })
-                }
-                type="text"
-                className="xl:w-[800px] outline-none"
-              />
-            </div>
-
-            <div className="flex">
-              <div className="my-1 mx-2 lg:mx-4">
-                <button onClick={handlePaste} className="">
-                  <i className="fa fa-paste bg-green-500 text-white rounded-full p-2"></i>
-                </button>
+          <div className="lg:mx-20 ">
+            <div className="flex justify-between bg-white rounded-lg my-10 mx-2 ">
+              <div className="p-2">
+                <input
+                  value={action.downloadLink}
+                  placeholder="Paste Instagram URL"
+                  onChange={(e) =>
+                    setAction({ downloadLink: e.target.value, open: false })
+                  }
+                  type="text"
+                  className="xl:w-[800px] outline-none"
+                />
               </div>
 
-              <div className="hidden md:block bg-black px-3 rounded-xl">
-                <button
-                  onClick={handleClick}
-                  className="navbar outline-none text-white"
-                >
-                  Download
-                </button>
+              <div className="flex">
+                <div className="my-1 mx-2 lg:mx-4">
+                  <button onClick={handlePaste} className="">
+                    <i className="fa fa-paste bg-green-500 text-white rounded-full p-2"></i>
+                  </button>
+                </div>
+
+                <div className="hidden md:block bg-black px-3 rounded-xl">
+                  <button
+                    onClick={handleClick}
+                    className="navbar outline-none text-white"
+                  >
+                    Download
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -118,6 +121,10 @@ const Instagram = () => {
             )}
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <Features name="instagram" />
       </div>
     </Layout>
   );

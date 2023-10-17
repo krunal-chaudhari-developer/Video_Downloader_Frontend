@@ -24,24 +24,24 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex space-x-16 bg-slate-50 px-3 lg:px-5 lg:py-2 shadow-lg">
+      <div className="flex space-x-16 bg-slate-50 px-3 py-1 lg:px-5 lg:py-2 shadow-lg">
         <div className="">
           <h1
             onClick={() => navigate("/")}
-            className="navbar font-bold text-2xl lg:text-4xl text-green-500"
+            className="navbar font-bold text-3xl lg:text-4xl text-green-500"
           >
             Inlifa
           </h1>
         </div>
 
-        <div ref={menuRef} className="py-2.5 relative">
+        <div ref={menuRef} className="hidden sm:block py-2.5 relative">
           <button onClick={() => setOpen(!open)} className="flex space-x-2 ">
             <PiFolderSimpleFill size={22} className="-mt-0.5 lg:mt-0.5" />
             <h1 className="font-semibold text-sm lg:text-lg">Downloaders</h1>
             <AiOutlineCaretDown className="mt-0.5 lg:mt-1.5 " />
           </button>
           {open && (
-            <div className="border rounded-3xl w-fit absolute bg-white">
+            <div className="border rounded-3xl w-fit absolute  bg-white">
               {downloaders.map((e, id) => (
                 <div
                   className={`hover:bg-slate-200 ${
