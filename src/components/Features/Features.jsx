@@ -73,7 +73,7 @@ const Features = ({ name }) => {
 
   return (
     <div>
-      <div className="w-[80rem] h-[50rem] my-0 mx-auto relative overflow-hidden">
+      <div className="lg:w-[80rem] h-[35rem] lg:h-[50rem] my-0 mx-auto relative overflow-hidden">
         <h4 className="text-center text-3xl pt-16 underline capitalize">
           Features of {name} Video Downloader
         </h4>
@@ -82,17 +82,17 @@ const Features = ({ name }) => {
           {data.map((slide, i) => (
             <div
               key={i}
-              className={`absolute top-48 transform transition-transform duration-300`}
+              className={`absolute top-48 transform transition-transform duration-300 px-3 lg:px-0`}
               style={{ transform: `translateX(${100 * (i - curSlide)}%)` }}
             >
-              <h2 className="pl-[200px] text-2xl text-gray-700 font-semibold">
+              <h2 className="lg:pl-[150px] text-xl lg:text-2xl text-gray-700 font-semibold">
                 {slide.title}
               </h2>
-              <p className="w-10/12 text-gray-500 text-lg ml-[200px] pb-3 ">
+              <p className="lg:w-10/12 text-gray-500 lg:text-lg lg:ml-[150px] pb-3 ">
                 {slide.description}
               </p>
               <img
-                className={`${slide.className} mx-52`}
+                className={`${slide.className} hidden lg:block mx-52`}
                 src={slide.images}
                 alt={slide.title}
               />
@@ -100,7 +100,7 @@ const Features = ({ name }) => {
           ))}
         </div>
 
-        <div className="absolute flex bottom-[7%] left-[40%]">
+        <div className="absolute flex justify-center  bottom-[7%] lg:left-[40%]">
           <button
             className="-mt-4 mx-3 outline-none rounded-full"
             onClick={prevSlide}

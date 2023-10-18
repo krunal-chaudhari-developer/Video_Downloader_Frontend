@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Layout from "../../Layout/Layout";
 import "../../../Spinner.css";
 import Features from "../../Features/Features";
+import SocialMedia from "../../Social Media/SocialMedia";
 
 const Instagram = () => {
   const [data, setData] = useState([]);
@@ -121,6 +122,10 @@ const Instagram = () => {
             )}
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <SocialMedia />
       </div>
 
       <div className="">
