@@ -58,12 +58,12 @@ const Features = ({ name }) => {
         setData(pinterestSlides);
         break;
 
-      case "vimeo":
-        setData(vimeoSlides);
-        break;
-
       case "spotify":
         setData(soundcloudSlides);
+        break;
+
+      case "vimeo":
+        setData(vimeoSlides);
         break;
 
       default:
@@ -75,7 +75,7 @@ const Features = ({ name }) => {
     <div>
       <div className="lg:w-[80rem] h-[35rem] lg:h-[50rem] my-0 mx-auto relative overflow-hidden">
         <h4 className="text-center text-3xl pt-16 underline capitalize">
-          Features of {name} Video Downloader
+          Features of {name} {name === "spotify" ? "Music" : "Video"} Downloader
         </h4>
 
         <div className="">

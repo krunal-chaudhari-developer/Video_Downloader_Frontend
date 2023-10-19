@@ -19,13 +19,37 @@ import image18 from "./Snapchat/Snapchat images/image4.png";
 import image20 from "./Twitter/Twitter images/image2.png";
 import image19 from "./Twitter/Twitter images/image1.png";
 import image21 from "./Twitter/Twitter images/image3.png";
-import image22 from "./Vimeo/Vimeo images/image1.png";
-import image23 from "./Vimeo/Vimeo images/image2.png";
-import image24 from "./Vimeo/Vimeo images/image3.png";
+import image22 from "./Vimeo/Vimeo Images/image1.png";
+import image23 from "./Vimeo/Vimeo Images/image2.png";
+import image24 from "./Vimeo/Vimeo Images/image3.png";
 import image25 from "./Youtube/Youtube images/Image 1.jpg";
 import image26 from "./Youtube/Youtube images/Image 2.png";
 import image27 from "./Youtube/Youtube images/Image 3.png";
 import image28 from "./Youtube/Youtube images/Image 4.png";
+
+export const vimeoSlides = [
+  {
+    title: "Vimeo to mp4 in just one click!",
+    className: "feature14",
+    description:
+      "Inlifa's Vimeo online video downloader lets you download videos straight from the Vimeo platform in one click. Your video will be exported in mp4 format so you can play it on any media player or share on different social media or video-sharing sites. No watermarks so you can repurpose and share them anywhere. No loss in video quality—download videos in HD.",
+    images: image22,
+  },
+  {
+    title: "Convert vimeo videos to mp3 or create a new video",
+    className: "feature24",
+    description:
+      "You can even download a Vimeo video as an audio file! Just click on “Open in editor” once your video is ready and export it as an mp3 from the download options. Or—create a new music video! You can add sound effects and background music; choose from our library of stock audio and video. Our premium subscribers get full access to our stock audio media library. Check our pricing page for more info.",
+    images: image23,
+  },
+  {
+    title: "All your video editing needs in one place",
+    className: "feature34",
+    description:
+      "Inlifa lets you do it all in one place! It features all the video editing tools you will ever need to create amazing videos that you can share with the world. Make your videos look professional in just a few clicks—even without any video editing experience. Add subtitles to your videos to make them accessible for everyone. Record your screen and webcam to create tutorial videos, add animated text, images, remove background from video, and more!",
+    images: image24,
+  },
+];
 
 export const facebookSlides = [
   {
@@ -192,30 +216,6 @@ export const twitterSlides = [
     description:
       "GIF is a long video type. If you can’t watch it now, you can download GIF videos to your device to be sure that you can return to watching later, without the need to be online or in case the GIF can be deleted.",
     images: image21,
-  },
-];
-
-export const vimeoSlides = [
-  {
-    title: "Vimeo to mp4 in just one click!",
-    className: "feature14",
-    description:
-      "Inlifa's Vimeo online video downloader lets you download videos straight from the Vimeo platform in one click. Your video will be exported in mp4 format so you can play it on any media player or share on different social media or video-sharing sites. No watermarks so you can repurpose and share them anywhere. No loss in video quality—download videos in HD.",
-    images: image22,
-  },
-  {
-    title: "Convert vimeo videos to mp3 or create a new video",
-    className: "feature24",
-    description:
-      "You can even download a Vimeo video as an audio file! Just click on “Open in editor” once your video is ready and export it as an mp3 from the download options. Or—create a new music video! You can add sound effects and background music; choose from our library of stock audio and video. Our premium subscribers get full access to our stock audio media library. Check our pricing page for more info.",
-    images: image23,
-  },
-  {
-    title: "All your video editing needs in one place",
-    className: "feature34",
-    description:
-      "Inlifa lets you do it all in one place! It features all the video editing tools you will ever need to create amazing videos that you can share with the world. Make your videos look professional in just a few clicks—even without any video editing experience. Add subtitles to your videos to make them accessible for everyone. Record your screen and webcam to create tutorial videos, add animated text, images, remove background from video, and more!",
-    images: image24,
   },
 ];
 

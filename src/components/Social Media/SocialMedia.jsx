@@ -30,7 +30,7 @@ const SocialMedia = () => {
             className="flex space-x-2 border border-slate-900 p-4 rounded-3xl shadow-sm mx-2 my-2 hover:bg-slate-100"
           >
             <i className="fa fa-youtube text-[#CD201F] mt-0.5"></i>
-            <h1 className="">Youtube Video Download in Mp3 and Videos</h1>
+            <h1 className="">Youtube Video Download in Mp3</h1>
           </Link>
           <Link
             to="/snapchat"
@@ -69,7 +69,7 @@ const SocialMedia = () => {
           </Link>
           <Link
             to="/vimeo"
-            className="flex space-x-2 border border-slate-900  p-4 rounded-3xl shadow-sm mx-2 my-2 hover:bg-slate-100"
+            className="flex space-x-2 border border-slate-900 p-4 rounded-3xl shadow-sm mx-2 my-2 hover:bg-slate-100"
           >
             <i className="fa fa-vimeo text-[#86c9ef] mt-0.5"></i>
             <h1 className="">Vimeo Video Download</h1>
