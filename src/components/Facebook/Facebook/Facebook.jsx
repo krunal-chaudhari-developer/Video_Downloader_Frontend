@@ -95,7 +95,7 @@ const Facebook = () => {
                   <select
                     onChange={(e) => setQuality(e.target.value)}
                     value={quality}
-                    className="outline-none mx-2 my-1.5 bg-transparent"
+                    className="outline-none hidden md:block mx-2 my-1.5 bg-transparent"
                   >
                     <option value="Low" className="">
                       Low Quality

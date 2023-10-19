@@ -117,7 +117,7 @@ const Youtube = () => {
                   <select
                     onChange={(e) => setQuality(e.target.value)}
                     value={quality}
-                    className="outline-none mx-2 my-1.5 bg-transparent"
+                    className="outline-none mx-2 my-1.5 bg-transparent hidden md:block"
                   >
                     <option value="low">Low Quality</option>
                     <option value="medium">Medium Quality</option>
