@@ -41,14 +41,14 @@ const Navbar = () => {
             <AiOutlineCaretDown className="mt-0.5 lg:mt-1.5 " />
           </button>
           {open && (
-            <div className="border rounded-3xl w-fit absolute  bg-white">
+            <div className="border rounded-xl w-fit absolute  bg-white">
               {downloaders.map((e, id) => (
                 <div
                   className={`hover:bg-slate-200 ${
                     id + 1 === 1
-                      ? "rounded-t-3xl "
+                      ? "rounded-t-xl "
                       : id + 1 === 9
-                      ? "rounded-b-3xl "
+                      ? "rounded-b-xl "
                       : ""
                   }`}
                   key={id}

@@ -26,6 +26,12 @@ import image25 from "./Youtube/Youtube images/Image 1.jpg";
 import image26 from "./Youtube/Youtube images/Image 2.png";
 import image27 from "./Youtube/Youtube images/Image 3.png";
 import image28 from "./Youtube/Youtube images/Image 4.png";
+import image29 from "../assets/Image1.png";
+import image30 from "../assets/Image2.png";
+import image31 from "../assets/Image3.webp";
+import image32 from "../assets/Image4.webp";
+import image33 from "../assets/Image5.webp";
+import image34 from "../assets/Image6.webp";
 
 export const vimeoSlides = [
   {
@@ -252,52 +258,76 @@ export const youtubeSlides = [
 
 export const homepageContent = [
   {
+    id: 1,
     title: "Facebook Video Download",
+    name: "facebook",
     className: "fab fa-facebook",
     description:
       "In this Website you can download the Videos from Stories, Reels and from Posts",
   },
   {
+    id: 2,
     title: "Instagram Video & Photo Download",
+    name: "instagram",
     className: "fa fa-instagram",
     description:
       "This Website is created for high quality videos from Instagram. You can download the videos from Stories, Reels, and From Posts.",
   },
   {
-    title: "Youtube Video Download",
+    id: 3,
+    title: "Youtube Video Download in MP3",
+    name: "youtube",
     className: "fa fa-youtube",
     description:
-      "This universal Website is created to download the videos from youtube in many formats and You can also download the videos in Audio.",
+      "This universal Website is created to download the videos from youtube in auio format.",
   },
   {
-    title: "Soundcloud Song Downloader",
-    className: "fa fa-soundcloud",
-    description:
-      " This universal soundcloud downloader created to download the songs from the soundcloud website by copying link and download in mp3.",
-  },
-  {
-    title: "Pinterest Video Download",
-    className: "fa fa-pinterest",
-    description:
-      "This universal website is created to download the videos from Pinterest. You can download the Videos from pinterest at very good quality.",
-  },
-  {
-    title: "Vimeo Video Download",
-    className: "fa fa-vimeo",
-    description:
-      "This universal website is created to download the Videos from Vimeo at Very good Quality.",
-  },
-  {
+    id: 4,
     title: "Snapchat Video Download",
+    name: "snapchat",
     className: "fa fa-snapchat",
     description:
       "This universal website is created to download the spotlights from snapchat.",
   },
   {
+    id: 5,
     title: "Linkedin Video Download",
+    name: "linkedin",
     className: "fab fa-linkedin",
     description:
       "This universal website is created to download the Videos from Linkedin.",
+  },
+  {
+    id: 6,
+    title: "Twitter Video Download",
+    name: "twitter",
+    className: "fab fa-twitter",
+    description:
+      "This universal website is created to download the Videos from Twitter.",
+  },
+  {
+    id: 7,
+    title: "Pinterest Video Download",
+    name: "pinterest",
+    className: "fa fa-pinterest",
+    description:
+      "This universal website is created to download the videos from Pinterest. You can download the Videos from pinterest at very good quality.",
+  },
+  {
+    id: 8,
+    title: "Spotify Song Downloader",
+    name: "spotify",
+    className: "fa fa-spotify",
+    description:
+      " This universal spotify downloader created to download the songs from the spotify website by copying link and download in mp3.",
+  },
+  {
+    id: 9,
+    title: "Vimeo Video Download",
+    name: "vimeo",
+    className: "fa fa-vimeo",
+    description:
+      "This universal website is created to download the Videos from Vimeo at Very good Quality.",
   },
 ];
 
@@ -312,9 +342,6 @@ export const homepageContent1 = [
     description:
       " People download Instagram photos to keep for future memories. They are making albums with various photos of their friends, or albums for events — this is their insurance that all the treasures will stay forever in their pocket.",
   },
-];
-
-export const homepageContent2 = [
   {
     title: "For repurposing content",
     description:
@@ -324,5 +351,38 @@ export const homepageContent2 = [
     title: "To save something forever",
     description:
       "This kind of tool is quite popular in 2023 as people want to keep content on their device memory forever. It doesn’t as safe to keep everything just on the social media platform. In this era of the internet we all understand how fragile social media platforms are. And how your data are unprotected. It is better to have a comfortable and simple tool to save everything you need right on your device and have it in your hand now.",
+  },
+];
+
+export const homepagecontent2 = [
+  {
+    id: 1,
+    img: image29,
+    desc: "All you have to do is copy & paste the URL link of your favorite social video in the above search box. After that, we will do the rest!",
+  },
+  {
+    id: 2,
+    img: image30,
+    desc: "No application is needed, and no installing software is required! Just copy the video URL link and paste it to GiveFastLink online downloader",
+  },
+  {
+    id: 3,
+    img: image31,
+    desc: "Download & save social videos from any browser, any OS. GiveFastLink works on mobile phones, PCs or tablets, and any OS containing Android, iOS, Windows, etc.",
+  },
+  {
+    id: 4,
+    img: image32,
+    desc: "The good news is that the GiveFastLink tool is full-free, so you don’t need to have a credit card or make any payment to use downloaders.",
+  },
+  {
+    id: 5,
+    img: image33,
+    desc: "The GiveFastLink doesn’t want you to register an account using the online video downloader. Just open the givefastlink.com in your browser!",
+  },
+  {
+    id: 6,
+    img: image34,
+    desc: "Depending on each video, available qualities may be different, but we guarantee you that the GiveFastLink gives you all qualities From 720p, 1080 Full HD to 4K.",
   },
 ];
